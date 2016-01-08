@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Illumenting the web with Lumen</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -13,9 +13,10 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -39,341 +40,329 @@
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+			<div class="slides" id="fragments">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Lumen</h1>
+					<h3>The microframework from Laravel.</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Created by <a href="http://matthewtrask.net">Matthew Trask</a> / <a href="http://twitter.com/matthewtrask">@matthewtrask</a></small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Who am I? (again...)</h2>
+
+						<p>I am a cat enthusiast.</p>
+						<img style="height: 400px;" src="img/apple_cat.jpg" alt="apple-cat">
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
+						<h2>Me still</h2>
 						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						Also, I do fun things with API's, drink more coffee then what is legitimately normal, and dance to Taylor Swift in the office.
 						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
+					<section>
+						<h2>Where can you find me at?</h2>
+						<ul>
+							<li><i class="fa fa-twitter" style="color: #55acee"></i> Twitter: @matthewtrask</li>
+							<li><i class="fa fa-comments"></i> IRC: matthewtrask</li>
+							<li><i class="fa fa-pencil-square-o" style="color: #2e8b57"></i> Blog: matthewtrask.net</li>
+							<li><i class="fa fa-beer" style="color: #ffcc00"></i> The Brick Store</li>
+						</ul>
 					</section>
 				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<h2>What is Lumen?</h2>
+					<p>A micro framework from Laravel, or Taylor Otwell</p>
+					<p>It aims to solve the problem of using monolithic frameworks like Laravel to get code out early and often.</p>
+					<p>Its like the Speed Racer version of Laravel</p>
 				</section>
-
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+					<section>
+						<h2>What can you do with it?</h2>
+						<ul>
+							<li>Build a small site</li>
+							<li>API Applications</li>
+							<li>Small sites to aid in a bigger site</li>
+						</ul><br><br>
+						<h4><b>But really, the key part of Lumen is...</b></h4>
+					</section>
 
+					<section>
+						<h2>It can be ported to Laravel</h2>
+						<p>This means that when its time, you can move a Lumen app to a Laravel app relatively quickly.</p>
+					</section>
+				</section>
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<section>
+						<h2>Why Lumen</h2>
+						<p>Besides the obvious ability to take existing code into a bigger Laravel app, the speed you get is a huge boost.</p>
+						<p>Out of the box, its packaged up nicely with libraries to get you started even faster.</p>
+						<pre><code class="php">
+"require": {
+	"php": ">=5.5.9",
+	"laravel/lumen-framework": "5.1.*",
+	"vlucas/phpdotenv": "~1.0"
+},
+						</code></pre>
+					</section>
+					<section>
+						<h4>Using Laravel\Lumen-Framework: 5.1.* will get you all of this:</h4>
+						<pre><code class="php">
+"require": {
+	"php": ">=5.5.9",
+    "illuminate/auth": "5.1.*",
+    "illuminate/bus": "5.1.*",
+    "illuminate/broadcasting": "5.1.*",
+    "illuminate/config": "5.1.*",
+    "illuminate/container": "5.1.*",
+    "illuminate/contracts": "5.1.*",
+    "illuminate/cache": "5.1.*",
+    "illuminate/console": "5.1.*",
+    "illuminate/cookie": "5.1.*",
+    "illuminate/database": "5.1.*",
+    "illuminate/encryption": "5.1.*",
+    "illuminate/events": "5.1.*",
+    "illuminate/filesystem": "5.1.*",
+    "illuminate/hashing": "5.1.*",
+    "illuminate/http": "5.1.*",
+    "illuminate/pagination": "5.1.*",
+    "illuminate/queue": "5.1.*",
+    "illuminate/session": "5.1.*",
+    "illuminate/support": "5.1.*",
+    "illuminate/translation": "5.1.*",
+    "illuminate/validation": "5.1.*",
+    "illuminate/view": "5.1.*",
+    "monolog/monolog": "~1.0",
+    "mtdowling/cron-expression": "~1.0",
+    "nikic/fast-route": "0.4.*",
+    "paragonie/random_compat": "~1.1",
+    "symfony/dom-crawler": "2.7.*",
+    "symfony/http-kernel": "2.7.*",
+    "symfony/http-foundation": "2.7.*",
+    "symfony/var-dumper": "2.7.*"
+},
+"require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "mockery/mockery": "~0.9"
+},
+						</code></pre>
+					</section>
 				</section>
-
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
+					<section>
+						<img src="img/lumen.png" width="300px" height="185px"> <span><h2>VS.</h2></span> <img src="img/logo.slim.png">
+					</section>
+					<section>
+						<img src="img/speed.png">
+						<p><small>* I pulled this off lumen.laravel.com</small></p>
+					</section>
+					<section>
+						<img src="img/speed.png" width="300px" height="285px">
+						<p>How test was ran: 2012 Retina Macbook Pro, with 16 gigs of ram.</p>
+						<p>Slim 3 was used at time of test. While it wasnt released, it was close enough.</p>
+						<pre><code class="command-line">ab -t 10 -c 10 http://lumen.app/</code></pre>
+					</section>
+					<section>
+						<p>Lumen is packaged with a few libraries you will need.</p>
+						<p>Slim comes alone, but ready to work.</p>
+					</section>
+					<section>
+						<h2>In Favor of Lumen</h2>
+						<p>Lumen, with all the packages allows for apps to be built rapidly.</p>
+					</section>
+					<section>
+						<h2>In Favor of Slim</h2>
+						<p>Complete flexibility in packages and how you want to craft your application</p>
+					</section>
 				</section>
-
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+					<section>
+						<h2>Lumen Features: Routing</h2>
+						<pre><code class="php">
+	$app->get('/{$name}', function ($name) {
+		return 'Hello '. $name;
+	});
 
+	$app->post('foo/bar', function () {
+		return 'Hello World';
+	});
+
+	$app->put('foo/bar', function () {
+	//
+	});
+
+	$app->delete('foo/bar', function () {
+	//
+	});
+							</code></pre>
+					</section>
+					<section>
+						<h4>You can also hide parts of URL's and make them easier for users</h4>
+						<pre><code class="php">
+$app->get('user/profile', [
+    'as' => 'profile', 'uses' => 'UserController@showProfile'
+]);
+</code></pre>
+				</section>
 				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
+					<h4>Routing by Namespace</h4>
+					<pre><code class="php">
+$app->group(['namespace' => 'App\Http\Controllers\Admin'], function ($app) {
+    // Controllers Within The "App\Http\Controllers\Admin" Namespace
+});
 					</code></pre>
 				</section>
-
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
+					<h4>X-CSRF-TOKEN</h4>
+					<p>Lumen comes with a built in CSRF token that can help you fight Cross Site Request Forgery attacks.</p>
+					<p>To call it, just place a meta tag like so:</p>
+					<pre><code class="html"><meta name="csrf-token" content="{{ csrf_token() }}"></code></pre>
+					<p>Then you pass it via AJAX</p>
 				</section>
-
+			</section>
+			<section>
 				<section>
-					<h2>Much more</h2>
+					<h2>Controllers</h2>
+					<p>With microframeworks, the default is to match the route to the specific logic, and return a view.</p>
+					<p>With Lumen, as you just saw, thats one option. But if you need more heavy lifting, i.e. specific HTTP methods, Lumen can handle true controllers too</p>
+				</section>
+				<section>
+					<h4>One drawback to Lumen, is missing out on most the Artisan commands.</h4>
+					<pre><code class="command-line">$ php artisan make:controller CatController</code></pre>
+				</section>
+				<section>
+					<pre><code class="command-line">$ php artisan make:controller CatController</code></pre>
+					<p>Pick one: Speed or Power</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Request</h2>
+					<p>Lumen handles PSR-7 Request/Response with the help of: </p>
+					<pre><code class="command-line">
+$ composer require symfony/psr-http-message-bridge
+
+$ composer require zendframework/zend-diactoros
+					</code></pre>
+				</section>
+				<section>
+					<h2>Requests</h2>
+					<p>Requests can be accessed:</p>
+					<pre><code class="php">$name = $request->input('name');</code></pre>
+					<p class="fragment">Doesnt matter the type of request verb</p>
+				</section>
+				<section>
+					<h2>Cookies</h2>
+					<p>Cookies are accessed by:</p>
+					<pre><code class="php">$value = $request->cookie('name');</code></pre>
+				</section>
+				<section>
+					<h2>Attaching a cookie</h2>
+					<pre><code class="php">
+$response = new Illuminate\Http\Response('Hello World');
+
+$response->withCookie(cookie('name', 'value', $minutes));
+
+return $response;
+					</code></pre>
+					<p class="fragment">It's just that easy</p>
+				</section>
+				<section>
+					<h2>File Uploads</h2>
+					<p>Couldnt be easier!</p>
+					<p>Use the <pre><code class="php">$files</code></pre> method from</p>
+					<pre><code class="php">Illuminate\Http\Request</code></pre>
+					<p>to access files being uploaded to your system.</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Responses</h2>
+					<pre><code class="php">
+	use Illuminate\Http\Response;
+
+	$app->get('home', function () {
+	    return (new Response($content, $status))
+	                  ->header('Content-Type', $value);
+	});
+					</code></pre>
+					<p>With Lumen, you can choose between sending a view or object response.</p>
+				</section>
+				<section>
+					<h2>Responses</h2>
+					<p>Lumen can handle responses with:</p>
 					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
+						<li>HTML/Views</li>
+						<li>JSON</li>
+						<li>File Downloads</li>
 				</section>
+				<section>
+					<h2>Responses</h2>
+					<p>With the redirect method, you can either redirect back to a page, or a whole new page</p>
+					<pre><code class="php">
+$app->get('dashboard', function () {
+    return redirect('home/dashboard');
+});
+					</code></pre>
+					<pre><code class="php">
+// For a route with the following URI: profile/{id}
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+return redirect()->route('profile', [1]);
+					</code></pre>
 				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Database</h2>
+					<p>Two ways to run SQL queries</p>
+					<pre><code class="php">$results = app('db')->select("SELECT * FROM users");</code></pre>
+					<pre><code class="php">$results = DB::select("SELECT * FROM users");</code></pre>
+					<p><small>The second works if Facades are turned on</small></p>
+				</section>
+				<section>
+					<h4>You also get the power of the Artisan Migration command, to help make tables faster.</h4>
+					<pre><code class="command-line">$ php artisan make:migration create_users_table</code></pre>
+				</section>
+			</section>
+			<section>
+				<h2>Views</h2>
+				<p>Should you need a view, its quick to get started with Lumen.</p>
+				<p class="fragment">The global View method allows you to return views from any request or controller.</p>
+			</section>
+			<section>
+				<h2>Sessions &amp; Validation</h2>
+				<p>Built in to the core, Lumen can easily handle session storing and validiation on data</p>
+			</section>
+			<section>
+				<section>
+					<h2>Unit Testing</h2>
+					<p>Last but not least, a full PHPUnit suite is built into Lumen.</p>
+					<pre><code class="command-line">$ ./composer/phpunit</code></pre>
+					<p>You literally have no reason to not test your code.</p>
+				</section>
+			</section>
+			<section>
+				<h2>Adding to Lumen</h2>
+				<p>These two packages allow you to extend the speed of Lumen with a little more power</p>
+				<p><a href="http://fractal.thephpleague.com">Fractal</a> from the League</p>
+				<p><a href="https://github.com/madewithlove/laravel-oauth2">OAuth2</a> for Laravel</p>
+				<p><a href="https://github.com/fzaninotto/Faker">Faker</a> for database seeding with migrations</p>
+			</section>
+			<section>
+				<h2>Questions?</h2>
+			</section>
+			<section>
+				<h2>Matt Trask</h2>				<p>Open Source PHP Developer</p>
+				<ul>
+					<li><i class="fa fa-twitter" style="color: #55acee"></i> Twitter: @matthewtrask</li>
+					<li><i class="fa fa-comments"></i> IRC: matthewtrask</li>
+					<li><i class="fa fa-pencil-square-o" style="color: #2e8b57"></i> Blog: matthewtrask.net</li>
+					<li><i class="fa fa-beer" style="color: #ffcc00"></i> The Brick Store</li>
+				</ul>
+
+			</section>
 
 			</div>
 
